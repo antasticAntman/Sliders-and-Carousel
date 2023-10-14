@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- PRACTICING ON CREATING SLIDERS AND CAROUSELS -->
+<!-- 
+
+    *INFO 10/13/23*
+        Working on designing a slider and carousel to help with future features
+        Tech stack I am using is HTML/CSS and Javascript
+    *INFO*
+ -->
