@@ -77,6 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
         Working on designing a slider and carousel to help with future features
         Tech stack I am using is HTML/CSS and Javascript
     *INFO*
-
-    *A test*
  -->
