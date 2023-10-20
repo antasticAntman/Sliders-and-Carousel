@@ -21,3 +21,22 @@ ul{
   display:flex;
   gap: 3rem;
 }
+
+#light-mode-div {
+  display: flex;
+  justify-content: center;
+  height:30px;
+  margin: auto 0px auto 0px
+}
+
+#light-mode {
+  border:1px solid black;
+  background-color: white;
+  font-size: 1.3rem;
+  
+}
+
+#light-mode:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <header>
-      <div className='Logo'>
+      <div id='Logo'>
         <h3>Logo</h3>
       </div>
       <ul>
@@ -12,6 +12,9 @@ function App() {
         <li>Career</li>
         <li>Contacts</li>
       </ul>
+      <div id='light-mode-div'>
+        <button id='light-mode'>Dark Mode</button>
+      </div>
     </header>
   );
 }
