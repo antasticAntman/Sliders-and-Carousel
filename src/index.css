@@ -16,13 +16,28 @@ header{
   border:1px solid red;
   display:flex;
   justify-content: space-around;
+  height: 6rem;
 }
 ul{
   display:flex;
   gap: 3rem;
+  height:3rem;
+  align-items: center;
+  margin:auto 0px ;
+}
+li{
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-#light-mode-div {
+#Logo{
+  display:flex;
+  align-items: center;
+  height:3rem;
+  margin:auto 0px;
+}
+
+ #light-mode-div {
   display: flex;
   justify-content: center;
   height:30px;
@@ -33,10 +48,9 @@ ul{
   border:1px solid black;
   background-color: white;
   font-size: 1.3rem;
-  
 }
 
 #light-mode:hover {
   text-decoration: underline;
   cursor: pointer;
-}
+} 
