@@ -32,7 +32,10 @@ function App() {
         </div>
       </header>
 
-      <ImagesSlider catIMAGES={catIMAGES}/>
+      <div style = {{width:'100%',height:'500px', margin:'0 auto'}}>
+        <ImagesSlider catIMAGES={catIMAGES}/>
+      </div>
+
     </body>
   );
 }
