@@ -68,3 +68,13 @@ li{
   height:100%;
   display:block;
 }
+
+.img-slider-btn {
+  all:unset;
+  display:block;
+  position: absolute;
+  top:0;
+  bottom:0;
+  padding:1rem;
+  cursor:pointer;
+}
