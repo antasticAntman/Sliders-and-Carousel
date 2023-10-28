@@ -6,7 +6,12 @@ export default function ImagesSlider(props){
     const [imageIndex, setImageIndex] = useState(0);
      
     function showNextImage (){
-
+        setImageIndex( index => {
+            if(index === props.catIMAGES.length - 1){
+                return 0
+            }
+            return index + 1
+        })
     }
 
     function showPrevImage(){
