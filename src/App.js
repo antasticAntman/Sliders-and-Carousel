@@ -32,7 +32,7 @@ function App() {
         </div>
       </header>
 
-      <div style = {{width:'100%',height:'500px', margin:'0 auto'}}>
+      <div style = {{width:'100%', aspectRatio: '10/3' , margin:'0 auto'}}>
         <ImagesSlider catIMAGES={catIMAGES}/>
       </div>
 
