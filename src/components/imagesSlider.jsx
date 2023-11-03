@@ -25,10 +25,26 @@ export default function ImagesSlider(props){
     }
 
     return(
-        <div style = {{width:'100%', height:'100%', position:'relative'}} >
-            <img src={props.catIMAGES[imageIndex]} alt ={`cat Images ${imageIndex} `} className="img-slider-div"/>
-            <button onClick={showPrevImage} className="img-slider-btn" style={{left:0}}><ArrowBigLeft/></button>
-            <button onClick={showNextImage} className="img-slider-btn" style={{right:0}}><ArrowBigRight/></button>
+        <div style = {{width:'100%', height:'100%', position:'relative', border:'1px solid red'}} >
+            <div  style={{width:'100%', height:'100%', overflow:'hidden'}}>
+                {props.catIMAGES.map( url => (
+                    <img key = {url} src={url} alt ={`cat Images ${imageIndex} `} className="img-slider-div"/>
+                ))}
+            </div>
+            
+            <button 
+            onClick={showPrevImage}
+            className="img-slider-btn" 
+            style={{left:0}}>
+                <ArrowBigLeft/>
+            </button>
+
+            <button 
+            onClick={showNextImage} 
+            className="img-slider-btn" 
+            style={{right:0}}>
+                <ArrowBigRight/>
+            </button>
         </div>
     )
 }
