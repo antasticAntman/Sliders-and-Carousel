@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {ArrowBigLeft, ArrowBigRight} from 'lucide-react'
+import {ArrowBigLeft, ArrowBigRight, Circle, CircleDot} from 'lucide-react'
 
 
 export default function ImagesSlider(props){
@@ -51,6 +51,22 @@ export default function ImagesSlider(props){
             style={{right:0}}>
                 <ArrowBigRight/>
             </button>
+
+            <div style=
+                {{
+                    position:'absolute', 
+                    bottom:'.5rem', 
+                    left:'50%', 
+                    translate:'-50%', 
+                    display:'flex', 
+                    gap:'.25rem'
+                
+                }}>
+                {props.catIMAGES.map( (_ , index) => (
+                    <button className="img-slider-dot-btn" onClick={() => setImageIndex(index)}>{index === imageIndex ? <CircleDot/> : <Circle/>}</button>
+                ))}
+            </div>
+
         </div>
     )
 }

@@ -83,6 +83,10 @@ li{
   transition: background-color 100ms ease-in-out;
 }
 
+.img-slider-btn:hover > * {
+  animation: squish 200ms ease-in-out;
+}
+
 .img-slider-btn > * {
   stroke:white;
   fill:black;
@@ -92,4 +96,10 @@ li{
 
 .img-slider-btn:hover {
   background-color: rgb(0,0,0,0.3);
+}
+
+@keyframes squish {
+  50%{
+    scale: 1.4 0.6;
+  }
 }
