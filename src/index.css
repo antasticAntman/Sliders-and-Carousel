@@ -69,6 +69,7 @@ li{
   display:block;
   flex-grow: 0;
   flex-shrink: 0;
+  transition: translate 300ms ease-in-out;
 }
 
 .img-slider-btn {
