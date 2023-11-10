@@ -23,9 +23,9 @@ function App() {
           <h3>Logo</h3>
         </div>
         <ul>
-          <li>About</li>
-          <li>Career</li>
-          <li>Contacts</li>
+          <button className='header-btn'><li>About</li></button>
+          <button className='header-btn'><li>Career</li></button>
+          <button className='header-btn'><li>Contacts</li></button>
         </ul>
         <div id='light-mode-div'>
           <button id='light-mode'>Dark Mode</button>

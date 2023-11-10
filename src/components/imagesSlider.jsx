@@ -25,11 +25,11 @@ export default function ImagesSlider(props){
     }
 
     return(
-        <div style = {{width:'100%', height:'100%', position:'relative', border:'1px solid red'}} >
+        <div style = {{width:'100%', height:'100%', position:'relative'}} >
             <div  style={{width:'100%', height:'100%', display:'flex', overflow:"hidden"}}>
                 {props.catIMAGES.map( url => (
                     <img 
-                        key = {url} 
+                        key={url} 
                         src={url} 
                         alt ={`cat Images ${imageIndex} `} 
                         className="img-slider-div"
