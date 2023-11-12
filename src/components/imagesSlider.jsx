@@ -4,7 +4,7 @@ import {ArrowBigLeft, ArrowBigRight, Circle, CircleDot} from 'lucide-react'
 
 export default function ImagesSlider(props){
     const [imageIndex, setImageIndex] = useState(0);
-     
+     console.log()
     function showNextImage (){
         setImageIndex( index => {
             if(index === props.catIMAGES.length - 1){
@@ -27,7 +27,8 @@ export default function ImagesSlider(props){
     return(
         <div style = {{width:'100%', height:'100%', position:'relative'}} >
             <div  style={{width:'100%', height:'100%', display:'flex', overflow:"hidden"}}>
-                {props.catIMAGES.map( url => (
+                {props.catIMAGES.map( ({url, alt}) => (
+                    console.log('url',url),
                     <img 
                         key={url} 
                         src={url} 

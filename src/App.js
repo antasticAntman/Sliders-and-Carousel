@@ -13,7 +13,14 @@ import cat3 from './imgs/cat-3.jpg'
 import cat4 from './imgs/cat-4.jpg'
 import cat5 from './imgs/cat-5.jpg'
 
-const catIMAGES = [cat1,cat2,cat3,cat4,cat5]
+const catIMAGES = [
+    {url:cat1, alt:'Cat One'},
+    {url:cat2, alt:'Cat Two'},
+    {url:cat3, alt:'Cat Three'},
+    {url:cat4, alt:'Cat Four'},
+    {url:cat5, alt:'Cat Five'},
+
+  ]
 
 function App() {
   return (
