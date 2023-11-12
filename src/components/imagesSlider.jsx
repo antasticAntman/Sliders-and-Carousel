@@ -27,12 +27,12 @@ export default function ImagesSlider(props){
     return(
         <div style = {{width:'100%', height:'100%', position:'relative'}} >
             <div  style={{width:'100%', height:'100%', display:'flex', overflow:"hidden"}}>
-                {props.catIMAGES.map( ({url, alt}) => (
-                    console.log('url',url),
+                {props.catIMAGES.map( ({url, alt}, index) => (
                     <img 
                         key={url} 
                         src={url} 
                         alt ={alt} 
+                        aria-hidden ={imageIndex !== index}
                         className="img-slider-div"
                         style ={{translate: `${-100 * imageIndex}%`}}    
                     />
@@ -45,7 +45,7 @@ export default function ImagesSlider(props){
             style={{left:0}}
             aria-label="View Previous Image"
             >
-                <ArrowBigLeft/>
+                <ArrowBigLeft aria-hidden/>
             </button>
 
             <button 
@@ -54,7 +54,7 @@ export default function ImagesSlider(props){
             style={{right:0}}
             aria-label="View Next Image"
             >
-                <ArrowBigRight/>
+                <ArrowBigRight aria-hidden/>
             </button>
 
             <div style=
@@ -72,9 +72,9 @@ export default function ImagesSlider(props){
                         key={index} 
                         className="img-slider-dot-btn" 
                         onClick={() => setImageIndex(index)}
-                        aria-label={`View Image ${index}`} 
+                        aria-label={`View Image ${index + 1}`} 
                     >
-                        {index === imageIndex ? <CircleDot/> : <Circle/>}
+                        {index === imageIndex ? <CircleDot aria-hidden/> : <Circle aria-hidden/>}
                         </button>
                 ))}
             </div>
