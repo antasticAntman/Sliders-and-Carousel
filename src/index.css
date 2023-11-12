@@ -138,3 +138,8 @@ li{
   height:100%;
   width:100%;
 }
+
+.img-slider-dot-btn:focus-visible,
+.img-slider-btn:focus-visible {
+  outline:auto;
+}
