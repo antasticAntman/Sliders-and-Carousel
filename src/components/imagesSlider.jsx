@@ -25,7 +25,11 @@ export default function ImagesSlider(props){
     }
 
     return(
-        <div style = {{width:'100%', height:'100%', position:'relative'}} >
+        <section aria-label='Image Slider' style = {{width:'100%', height:'100%', position:'relative'}} >
+            <a href='#after-image-slider-control' className="skip-link">
+                Skip Image Slider Controls
+            </a>
+            
             <div  style={{width:'100%', height:'100%', display:'flex', overflow:"hidden"}}>
                 {props.catIMAGES.map( ({url, alt}, index) => (
                     <img 
@@ -38,7 +42,7 @@ export default function ImagesSlider(props){
                     />
                 ))}
             </div>
-            
+
             <button 
             onClick={showPrevImage}
             className="img-slider-btn" 
@@ -79,6 +83,7 @@ export default function ImagesSlider(props){
                 ))}
             </div>
 
-        </div>
+            <div id='after-image-slider-control'/>
+        </section>
     )
 }

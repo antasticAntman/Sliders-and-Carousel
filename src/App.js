@@ -46,7 +46,19 @@ function App() {
         margin:'0 auto'}}>
         <ImagesSlider catIMAGES={catIMAGES}/>
       </div>
-
+        <a 
+          href='/' 
+          style=
+            {{
+              fontSize:'4rem', 
+              border:'1px solid red', 
+              display:'flex',
+              justifyContent:'center',
+              textDecoration:'none',
+              color:'black'
+            }}>
+              Link
+          </a>
     </body>
   );
 }
