@@ -41,14 +41,18 @@ export default function ImagesSlider(props){
             <button 
             onClick={showPrevImage}
             className="img-slider-btn" 
-            style={{left:0}}>
+            style={{left:0}}
+            aria-label="View Previous Image"
+            >
                 <ArrowBigLeft/>
             </button>
 
             <button 
             onClick={showNextImage} 
             className="img-slider-btn" 
-            style={{right:0}}>
+            style={{right:0}}
+            aria-label="View Next Image"
+            >
                 <ArrowBigRight/>
             </button>
 
@@ -63,7 +67,14 @@ export default function ImagesSlider(props){
                 
                 }}>
                 {props.catIMAGES.map( (_ , index) => (
-                    <button className="img-slider-dot-btn" onClick={() => setImageIndex(index)}>{index === imageIndex ? <CircleDot/> : <Circle/>}</button>
+                    <button
+                        key={index} 
+                        className="img-slider-dot-btn" 
+                        onClick={() => setImageIndex(index)}
+                        aria-label={`View Image ${index}`} 
+                    >
+                        {index === imageIndex ? <CircleDot/> : <Circle/>}
+                        </button>
                 ))}
             </div>
 
