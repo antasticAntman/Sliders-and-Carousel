@@ -32,7 +32,7 @@ export default function ImagesSlider(props){
                     <img 
                         key={url} 
                         src={url} 
-                        alt ={`cat Images ${imageIndex} `} 
+                        alt ={alt} 
                         className="img-slider-div"
                         style ={{translate: `${-100 * imageIndex}%`}}    
                     />
