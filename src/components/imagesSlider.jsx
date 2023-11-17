@@ -30,7 +30,7 @@ export default function ImagesSlider(props){
                 Skip Image Slider Controls
             </a>
             
-            <div  style={{width:'100%', height:'100%', display:'flex', overflow:"hidden"}}>
+            <div style={{width:'100%', height:'100%', display:'flex', overflow:"hidden"}}>
                 {props.catIMAGES.map( ({url, alt}, index) => (
                     <img 
                         key={url} 

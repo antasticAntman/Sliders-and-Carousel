@@ -95,10 +95,6 @@ li{
   transition: background-color 100ms ease-in-out;
 }
 
-.img-slider-btn:hover > * ,
-.img-slider-btn:focus-visible > * {
-  animation: squish 200ms ease-in-out;
-}
 
 .img-slider-btn > * {
   stroke:white;
@@ -168,4 +164,15 @@ li{
   text-decoration: none;
   color:black;
   z-index:100; 
+}
+
+@media not (prefers-reduced-motion) {
+  .img-slider-div {
+    transition: translate 300ms ease-in-out;
+  }
+
+.img-slider-btn:hover > * ,
+.img-slider-btn:focus-visible > * {
+  animation: squish 200ms ease-in-out;
+}
 }
