@@ -51,14 +51,13 @@ function App() {
           style=
             {{
               fontSize:'4rem', 
-              border:'1px solid red', 
               display:'flex',
               justifyContent:'center',
               textDecoration:'none',
               color:'black'
             }}>
               Link
-          </a>
+        </a>
     </body>
   );
 }
